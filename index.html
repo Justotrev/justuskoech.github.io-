@@ -7,23 +7,87 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
             text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
-        }
-        h1 {
             color: #333;
         }
-        p {
-            font-size: 18px;
-            color: #555;
+        header {
+            background: linear-gradient(90deg, #333, #555);
+            color: #fff;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hello! I'm <strong>Justus Koech</strong>, a Digital Marketer, Cybersecurity Specialist, and IT Support Expert.</p>
-    <p>Explore my projects and get in touch!</p>
-    <a href="mailto:justuskoech96@gmail.com">Contact Me</a>
+    <header>
+        Justus Koech | Portfolio
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hi, I'm Justus Koech, a Digital Marketer, Cybersecurity Specialist, and IT Support Expert.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>ERP System</h3>
+                <p>Developed an ERP system to streamline business operations by 40%.</p>
+            </div>
+            <div class="project-card">
+                <h3>Cybersecurity Awareness</h3>
+                <p>Conducted training sessions on security policies and risk management.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:justuskoech96@gmail.com">justuskoech96@gmail.com</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Justus Koech | All Rights Reserved
+    </footer>
 </body>
 </html>
